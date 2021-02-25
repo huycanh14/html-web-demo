@@ -14,4 +14,16 @@ header {
     color: #a1b1bc;
     background-color: #fff; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
+nav .active {
+  border-top: 5px solid #1abc9c; }
+
+li.nav-item.d-flex.align-items-center.pt-4.h-100.active > a {
+  color: #1abc9c; }
+
+.bn-5 {
+  border-top: 5px solid #fff; }
+
 /*# sourceMappingURL=the-fox-1.css.map */

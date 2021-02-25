@@ -1,5 +1,6 @@
 $colorWhile: #fff;
 $colorGray: #a1b1bc;
+$colorGreen: #1abc9c;
 
 header {
   background-color: #21c2f8;
@@ -13,10 +14,25 @@ header {
   }
 }
 .btn-outline-white {
-    color: $colorWhile;
-    border-color: $colorWhile;
-    &:hover {
-        color: $colorGray;
-        background-color: $colorWhile;
-    }
+  color: $colorWhile;
+  border-color: $colorWhile;
+  &:hover {
+    color: $colorGray;
+    background-color: $colorWhile;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+nav {
+  .active {
+    border-top: 5px solid $colorGreen;
+  }
+}
+li.nav-item.d-flex.align-items-center.pt-4.h-100.active > a {
+  color: $colorGreen;
+}
+.bn-5 {
+  border-top: 5px solid $colorWhile;
 }
