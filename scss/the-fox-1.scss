@@ -1,13 +1,13 @@
 $colorWhile: #fff;
 $colorGray: #a1b1bc;
 $colorGreen: #1abc9c;
+$colorBlack: #222533;
 
 header {
   background-color: #21c2f8;
   ul {
     margin-top: revert;
     li {
-      list-style-type: none;
       float: left;
       color: $colorWhile;
     }
@@ -35,4 +35,49 @@ li.nav-item.d-flex.align-items-center.pt-4.h-100.active > a {
 }
 .bn-5 {
   border-top: 5px solid $colorWhile;
+}
+#carouselExampleControls {
+  max-height: 900px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 9%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    // padding: 0.5em;
+    border: 1px solid $colorWhile;
+    &:hover {
+      background-color: $colorBlack;
+    }
+  }
+  i {
+    background-color: $colorWhile;
+    border-radius: 50%;
+    color: $colorBlack;
+    padding: 2px;
+  }
+  .carousel-caption {
+    right: 0;
+    text-align: left;
+    top: 30%;
+  }
+  li {
+    color: $colorBlack;
+    padding: 0.3em 0em;
+  }
+  hr {
+    width: 20%;
+    padding: 0.1em;
+    color: $colorBlack;
+    opacity: 0.6;
+  }
+}
+ul {
+  li {
+    list-style-type: none;
+  }
 }
