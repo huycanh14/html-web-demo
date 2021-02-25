@@ -1,0 +1,17 @@
+header {
+  background-color: #21c2f8; }
+  header ul {
+    margin-top: revert; }
+    header ul li {
+      list-style-type: none;
+      float: left;
+      color: #fff; }
+
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff; }
+  .btn-outline-white:hover {
+    color: #a1b1bc;
+    background-color: #fff; }
+
+/*# sourceMappingURL=the-fox-1.css.map */

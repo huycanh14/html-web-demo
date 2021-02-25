@@ -1,0 +1,22 @@
+$colorWhile: #fff;
+$colorGray: #a1b1bc;
+
+header {
+  background-color: #21c2f8;
+  ul {
+    margin-top: revert;
+    li {
+      list-style-type: none;
+      float: left;
+      color: $colorWhile;
+    }
+  }
+}
+.btn-outline-white {
+    color: $colorWhile;
+    border-color: $colorWhile;
+    &:hover {
+        color: $colorGray;
+        background-color: $colorWhile;
+    }
+}
