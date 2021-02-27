@@ -73,28 +73,43 @@ ul li {
 #introduce i {
   float: right; }
 
-#amazing-works .box-show {
-  border: 1px solid #a1b1bc;
-  padding: 0px 0px !important; }
-  #amazing-works .box-show .heart {
-    text-align: right;
-    color: #a1b1bc; }
-  #amazing-works .box-show .content-box {
-    height: 200px;
-    border-top: 1px solid #a1b1bc; }
-    #amazing-works .box-show .content-box .click-plus {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      #amazing-works .box-show .content-box .click-plus:before {
-        position: absolute;
-        content: url("../img/plus.png");
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: inherit;
-        transition: 0.5s all; }
-      #amazing-works .box-show .content-box .click-plus:hover:before {
-        transform: rotate(-3600deg); }
+#amazing-works {
+  background-color: #f9fafb; }
+  #amazing-works .box-show {
+    border: 1px solid #a1b1bc;
+    padding: 0px 0px !important; }
+    #amazing-works .box-show .heart {
+      text-align: right;
+      color: #a1b1bc; }
+    #amazing-works .box-show:hover {
+      border: 1px solid #222533; }
+      #amazing-works .box-show:hover .title-box {
+        background-color: #a1b1bc;
+        color: #fff; }
+        #amazing-works .box-show:hover .title-box .heart {
+          color: #fff; }
+      #amazing-works .box-show:hover .click-plus {
+        background-color: #222533; }
+        #amazing-works .box-show:hover .click-plus:before {
+          opacity: 1 !important;
+          transform: rotate(-3600deg); }
+    #amazing-works .box-show .content-box {
+      height: 200px;
+      border-top: 1px solid #a1b1bc;
+      background-color: #a1b1bc; }
+      #amazing-works .box-show .content-box .click-plus {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        #amazing-works .box-show .content-box .click-plus:before {
+          opacity: 0;
+          position: absolute;
+          content: url("../img/plus.png");
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: inherit;
+          transition: 0.5s all; }
 
 /*# sourceMappingURL=the-fox-1.css.map */

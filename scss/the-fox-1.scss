@@ -2,6 +2,7 @@ $colorWhile: #fff;
 $colorGray: #a1b1bc;
 $colorGreen: #1abc9c;
 $colorBlack: #222533;
+$backgroundGray: #f9fafb;
 
 header {
   background-color: #21c2f8;
@@ -102,6 +103,7 @@ ul {
 }
 
 #amazing-works {
+  background-color: $backgroundGray;
   .box-show {
     border: 1px solid $colorGray;
     padding: 0px 0px !important;
@@ -109,34 +111,44 @@ ul {
       text-align: right;
       color: $colorGray;
     }
+    &:hover {
+      border: 1px solid $colorBlack;
+      .title-box {
+        background-color: $colorGray;
+        color: $colorWhile;
+        .heart {
+          color: $colorWhile;
+        }
+      }
+      .click-plus {
+        background-color: #222533;
+        // display: block !important;
+        &:before {
+          opacity: 1 !important;
+          transform: rotate(-3600deg);
+        }
+      }
+    }
     .content-box {
       height: 200px;
       border-top: 1px solid $colorGray;
+      background-color: $colorGray;
       .click-plus {
+        // display: none;
         position: relative;
         width: 100%;
         height: 100%;
         &:before {
-          // font-size: 50px;
-          // line-height: 31px;
+          opacity: 0;
           position: absolute;
           content: url("../img/plus.png");
-          // margin-left: -20px;
-          // margin-top: -20px;
-          // height: 40px;
-          // width: 40px;
-          // left: 50%;
-          // top: 50%;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
           height: inherit;
           transition: 0.5s all;
-        }
-        &:hover {
-          &:before {
-            transform: rotate(-3600deg);
-          }
+          // transition-delay: 0.5s;
         }
       }
     }
