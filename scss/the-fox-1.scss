@@ -154,3 +154,25 @@ ul {
     }
   }
 }
+
+#counters {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      width: calc(100% / 5);
+      color: $colorWhile;
+    }
+  }
+}
+
+.bg-green1 {
+  background-color: #20caa8;
+}
+.bg-green2 {
+  background-color: #1ad5b0;
+}
+.bg-black {
+  background-color: $colorBlack;
+}

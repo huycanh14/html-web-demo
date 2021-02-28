@@ -112,4 +112,21 @@ ul li {
           height: inherit;
           transition: 0.5s all; }
 
+#counters ul {
+  margin: 0;
+  padding: 0; }
+  #counters ul li {
+    float: left;
+    width: calc(100% / 5);
+    color: #fff; }
+
+.bg-green1 {
+  background-color: #20caa8; }
+
+.bg-green2 {
+  background-color: #1ad5b0; }
+
+.bg-black {
+  background-color: #222533; }
+
 /*# sourceMappingURL=the-fox-1.css.map */
